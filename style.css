@@ -11,8 +11,17 @@ header h1{
   font-size: 50px;
 }
 
+header nav{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 footer{
   text-align: center;
+}
+
+.flavor_text{
+  padding:10px;
 }
 
 #playBGM{
