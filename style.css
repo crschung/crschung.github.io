@@ -25,7 +25,8 @@ footer{
 }
 
 #playBGM{
-  border-radius: 3px
+  border-radius: 3px;
+  padding: 1rem;
 }
 
 a{
