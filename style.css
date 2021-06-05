@@ -1,61 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-body{
+body {
+  font-family: "Dosis", sans-serif;
   background-color:#6D7DFF;
+}
+
+.sidenav {
+  background-color: #65B4E0;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
   color: black;
-  font-family: 'Dosis', sans-serif;
+  display: block;
 }
 
-.header h1{
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.main h1{
+  position: relative;
+  background-color: #ED9F66;
   text-align: center;
-  font-size: 60px;
-  background-color: #EF6DFF;
+  margin: 0px;
+  padding: 0px;
 }
 
-.navigation{
-  background-color: #A66DFF;
-  width: 20%
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
-.navigation li{
-
-}
-
-
-header nav{
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 footer{
   text-align: center;
-}
-
-.flavor_text{
-  padding:10px;
-}
-
-#playBGM{
-  border-radius: 3px;
-  padding: 1rem;
-}
-
-a:link{
-  text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.container{
-  height: 100px;
-  width: 500px;
-  background-color: #2e86c1 ;
-  position:absolute;
-   top:45%;
-   left:40%;
-   margin-top:-60px;
-   margin-left:-50px;
 }
