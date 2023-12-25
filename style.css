@@ -1,20 +1,17 @@
-.media{
-    /* padding: 3rem; */
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    animation: fadeIn 1s;
-}
+
 main{
     animation: fadeIn 0.5s;
 }
-h1, h2, h3, h5{
+h1, h2, h3, p{
     padding: 1rem;
+    text-align: center;
 }
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+#menu{
+    margin: auto;
+    width: 30%;
+    padding: 10px;
 }
-
+#links{
+    display: flex;
+    justify-content: space-evenly;
+}
