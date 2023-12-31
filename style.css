@@ -1,17 +1,60 @@
-
-main{
-    animation: fadeIn 0.5s;
+#main{
+    /* height: 2em;
+    width: 50%;
+    border: 1px solid black; */
+    background-color: white;
+    opacity: 0;
+    /* color: yellow; */
 }
 h1, h2, h3, p{
-    padding: 1rem;
+    padding: 3px;
     text-align: center;
+}
+
+.fade-in{
+    animation-delay: 1s;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fade-out{
+    animation-name: fade-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 #menu{
     margin: auto;
-    width: 30%;
+    width: 40%;
     padding: 10px;
+    /* animation-delay: 10s; */
+    /* animation-name: fade-in;
+    animation-duration: 2s; */
 }
 #links{
     display: flex;
     justify-content: space-evenly;
+}
+
+.start{
+    animation-name: fade-in;
+    animation-duration: 2s;
+    align-self: center;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
